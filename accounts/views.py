@@ -3,20 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 
 def signup(request):
-    if request.method == 'POST':
-
-        if request.POST['password1'] == request.POST['password2']:
-            try:
-                user = User.objects.get(username=request.POST['username'])
-                return render(request, 'accounts/signup.html',{'error':'Username has already been taken'})
-            except User.DoesNotExist:
-              user = User.objects.create_user(request.POST['username'],password=request.POST['password1'])
-              auth.login(request,user)
-              return redirect('home')
-        else:
-            return render(request,'accounts/signup.html',{'error':'Passwords Must Match'})
-    else:
         return render(request, 'accounts/signup.html')
+
 def login(request):
     if request.method == 'POST':
         user = auth.authenticate(username=request.POST['username'],password=request.POST['password'])
@@ -34,6 +22,52 @@ def logout(request):
         auth.logout(request)
         return redirect('home')
 
+def student(request):
+    if request.method == 'POST':
 
+        if request.POST['password1'] == request.POST['password2']:
+            try:
+                user = User.objects.get(username=request.POST['username'])
+                return render(request, 'accounts/student.html',{'error':'Username has already been taken'})
+            except User.DoesNotExist:
+              user = User.objects.create_user(request.POST['username'],password=request.POST['password1'])
+              auth.login(request,user)
+              return redirect('home')
+        else:
+            return render(request,'accounts/student.html',{'error':'Passwords Must Match'})
+    else:
+        return render(request, 'accounts/student.html')
+
+def teacher(request):
+    if request.method == 'POST':
+
+        if request.POST['password1'] == request.POST['password2']:
+            try:
+                user = User.objects.get(username=request.POST['username'])
+                return render(request, 'accounts/teacher.html',{'error':'Username has already been taken'})
+            except User.DoesNotExist:
+              user = User.objects.create_user(request.POST['username'],password=request.POST['password1'])
+              auth.login(request,user)
+              return redirect('home')
+        else:
+            return render(request,'accounts/teacher.html',{'error':'Passwords Must Match'})
+    else:
+        return render(request, 'accounts/teacher.html')
+
+def courseadvisor(request):
+    if request.method == 'POST':
+
+        if request.POST['password1'] == request.POST['password2']:
+            try:
+                user = User.objects.get(username=request.POST['username'])
+                return render(request, 'accounts/courseadvisor.html',{'error':'Username has already been taken'})
+            except User.DoesNotExist:
+              user = User.objects.create_user(request.POST['username'],password=request.POST['password1'])
+              auth.login(request,user)
+              return redirect('home')
+        else:
+            return render(request,'accounts/courseadvisor.html',{'error':'Passwords Must Match'})
+    else:
+        return render(request, 'accounts/courseadvisor.html')
 
 

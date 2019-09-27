@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if error %}
+{{ error }}
+<br/>
+<br/>
+{% endif %}
+
+<h1>Sign Up</h1>
+
+<form method="POST" action="{% url 'student' %}">
+ {% csrf_token %}
+    Username:
+    <br/>
+    <input type="text" name="username"/>
+    <br/>
+    Password:
+    <br/>
+    <input type="password" name="password1"/>
+    <br/>
+    Confirm Password:
+    <br/>
+    <input type="password" name="password2"/>
+    <br/>
+    Roll N0:
+   <br/>
+   <input type="number" name="rollnumber">
+   <br/>
+   Department:
+   <br/>
+   <input type="text" name="department">
+   <br/>
+   Email Address:
+   <br/>
+   <input type="email" name="email">
+   <br/>
+   <input class="btn btn-primary" type="submit" value="Sign Up!"/>
+</form>
+
+      </form>
+
+
+{% endblock %}

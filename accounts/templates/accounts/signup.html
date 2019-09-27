@@ -7,24 +7,16 @@
 {% endif %}
 
 <h1>Sign Up</h1>
-<form method="POST" action="{% url 'signup' %}">
- {% csrf_token %}
-    Username:
-    <br/>
-    <input type="text" name="username"/>
-    <br/>
-    Password:
-    <br/>
-    <input type="password" name="password1"/>
-    <br/>
-    Confirm Password:
-    <br/>
-    <input type="password" name="password2"/>
-    <br/>
-    <input class="btn btn-primary" type="submit" value="Sign Up!"/>
-</form>
+<h4>If you are student <a href="{% url 'student' %}">click here</a></h4>
 
-      </form>
+<h4>If you are a teacher <a href="{% url 'teacher' %}">click here</a></h4>
+
+<h4>If you are course advisor <a href="{% url 'courseadvisor' %}">click here</a></h4>
+
+
+
+
+
 
 
 {% endblock %}
