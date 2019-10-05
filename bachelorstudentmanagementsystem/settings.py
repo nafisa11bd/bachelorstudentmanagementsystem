@@ -60,7 +60,7 @@ ROOT_URLCONF = 'bachelorstudentmanagementsystem.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['bachelorstudentmanagementsystem/templates'],
+        'DIRS': ['bachelorstudentmanagementsystem/templates',os.path.join(BASE_DIR,'result','templates','result'),os.path.join(BASE_DIR,'semresult','templates','semresult')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

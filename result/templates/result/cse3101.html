@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     {% load staticfiles %}
     <meta charset="UTF-8">
     <title>class tests</title>
 </head>
 <body>
-dsadasd
+
+
+
+<div class="container">
+</br>
+    <form method="POST">
+        {% csrf_token %}
+  <div class="form-group">
+    <label>Add Roll</label>
+    <input type="number" class="form-control" name="roll"  placeholder="Roll">
+      <label>CT 1 Mark</label>
+      <input type="number" class="form-control" name="ct1mark"  placeholder=" Mark">
+       <label>CT 2 Mark</label>
+      <input type="number" class="form-control" name="ct2mark"  placeholder=" Mark">
+      <label>CT 3 Mark</label>
+      <input type="number" class="form-control" name="ct3mark"  placeholder=" Mark">
+      <label>CT 4 Mark</label>
+      <input type="number" class="form-control" name="ct4mark"  placeholder=" Mark">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </br>
+<table class="table table-bordered ">
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">Roll</th>
+      <th scope="col">CT1 Mark</th>
+      <th scope="col">CT2 Mark</th>
+      <th scope="col">CT3 Mark</th>
+      <th scope="col">CT4 Mark</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Update</th>
+
+    </tr>
+  </thead>
+    <tbody>
+    {% for obj in cse_3101 %}
+
+    <tr>
+
+      <td>{{obj.roll}}</td>
+      <td>{{obj.ct1mark}}</td>
+      <td>{{obj.ct2mark}}</td>
+      <td>{{obj.ct3mark}}</td>
+      <td>{{obj.ct4mark}}</td>
+        <td><a href="{% url 'deletecse3101' obj.roll %}"> Delete</a></td>
+        <td><a href="{% url 'editcse3101' obj.roll %}"> Update</a></td>
+    </tr>
+
+
+
+{% endfor %}
+    </table>
+ </tbody>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

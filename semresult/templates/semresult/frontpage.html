@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base2.html' %}
+{% block content %}
+</br>
+</br>
+Here you can find your results!
+</br>
+<button onclick="location.href='{% url 'upload' %}'"; type="button" class="btn btn-primary btn-lg btn-block">Upload Result!</button>
+</br>
+</br>
+{% for result in result.all %}
+<div class="row">
+    <div class="col" onclick="window.location='{% url 'details' result.id %}'>
+  {% if result.file %}
+  <a href="{{ result.file.url }}"><h1>{{result.title}}</h1></a>
+    {% endif %}
 
-</body>
-</html>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
