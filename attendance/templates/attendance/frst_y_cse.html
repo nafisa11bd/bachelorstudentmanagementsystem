@@ -4,6 +4,11 @@
 {% load staticfiles %}
 
 {% block content %}
+<style>
+    body{
+        padding-top:65px;
+    }
+</style>
 
 <button onclick="location.href='{% url 'frstycseA' %}'";type="button" class="btn btn-primary btn-lg btn-block">A section</button>
 <button onclick="location.href='{% url 'frstycseB' %}'";type="button" class="btn btn-primary btn-lg btn-block">B section</button>

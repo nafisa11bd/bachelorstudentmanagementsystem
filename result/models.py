@@ -14,28 +14,43 @@ class CSE3101(models.Model):
     ct3mark = models.IntegerField(max_length=10, blank=True)
     ct4mark = models.IntegerField(max_length=10, blank=True)
     def bestavg(self):
-        a = self.ct1mark+self.ct2mark+self.ct3mark+self.ct4mark
-        b = min(self.ct1mark,self.ct2mark,self.ct3mark,self.ct4mark)
-        c = a - b
-        d = int(c/3)
+        a=self.ct1mark+self.ct2mark+self.ct3mark+self.ct4mark
+        b=min(self.ct1mark,self.ct2mark,self.ct3mark,self.ct4mark)
+        c=a-b;
+        d=int(c/3)
         if d<c/3:
             d=d+1
         return d
 
+
+class CSE3103(models.Model):
+    roll = models.IntegerField(primary_key=True)
+    ct1mark = models.IntegerField(max_length=10, blank=True)
+    ct2mark = models.IntegerField(max_length=10, blank=True)
+    ct3mark = models.IntegerField(max_length=10, blank=True)
+    ct4mark = models.IntegerField(max_length=10, blank=True)
+
 class CSE3105(models.Model):
-    roll = models.IntegerField(max_length=10)
-    mark = models.IntegerField(max_length=10)
+    roll = models.IntegerField(primary_key=True)
+    ct1mark = models.IntegerField(max_length=10, blank=True)
+    ct2mark = models.IntegerField(max_length=10, blank=True)
+    ct3mark = models.IntegerField(max_length=10, blank=True)
+    ct4mark = models.IntegerField(max_length=10, blank=True)
 
 
 class CSE3107(models.Model):
-    roll = models.IntegerField(max_length=10)
-    mark = models.IntegerField(max_length=10)
-    file = models.FileField(upload_to='abc/')
+    roll = models.IntegerField(primary_key=True)
+    ct1mark = models.IntegerField(max_length=10, blank=True)
+    ct2mark = models.IntegerField(max_length=10, blank=True)
+    ct3mark = models.IntegerField(max_length=10, blank=True)
+    ct4mark = models.IntegerField(max_length=10, blank=True)
 
 class CSE3109(models.Model):
-    roll = models.IntegerField(max_length=10)
-    mark = models.IntegerField(max_length=10)
-    file = models.FileField(upload_to='abc/')
+    roll = models.IntegerField(primary_key=True)
+    ct1mark = models.IntegerField(max_length=10, blank=True)
+    ct2mark = models.IntegerField(max_length=10, blank=True)
+    ct3mark = models.IntegerField(max_length=10, blank=True)
+    ct4mark = models.IntegerField(max_length=10, blank=True)
 
 
 

@@ -2,11 +2,15 @@
 {% load staticfiles %}
 
 {% block content %}
-
+<style>
+    body{
+        padding-top:65px;
+    }
+</style>
 <button onclick="location.href='{% url 'frst_y_cse' %}'";type="button" class="btn btn-primary btn-lg btn-block">First Year</button>
 <button onclick="location.href='{% url 'scnd_y_cse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Second Year</button>
-    <button onclick="location.href='{% url 'thrd_y_cse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Third Year</button>
-<button onclick="location.href='{% url 'frth_y_cse' %}'"; type="button" class="btn btn-primary btn-lg btn-block">Fourth Year</button>
+<button onclick="location.href='{% url 'thrd_y_cse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Third Year</button>
+<button onclick="location.href='{% url 'frth_y_cse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Fourth Year</button>
 
 
 {% endblock %}}

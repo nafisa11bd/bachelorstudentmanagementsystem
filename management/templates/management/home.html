@@ -4,5 +4,14 @@
 
 </br>
 <h1>Welcome to Bachelor Student Management System!</h1>
+<div>
+    {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-success">
+          {{ message }}
+      </div>
+    {% endfor %}
+    {% endif %}
+  </div>
 
 {% endblock %}

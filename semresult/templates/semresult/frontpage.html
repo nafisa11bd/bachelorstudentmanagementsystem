@@ -4,18 +4,32 @@
 </br>
 Here you can find your results!
 </br>
+
 <button onclick="location.href='{% url 'upload' %}'"; type="button" class="btn btn-primary btn-lg btn-block">Upload Result!</button>
 </br>
 </br>
-{% for result in result.all %}
-<div class="row">
-    <div class="col" onclick="window.location='{% url 'details' result.id %}'>
-  {% if result.file %}
-  <a href="{{ result.file.url }}"><h1>{{result.title}}</h1></a>
-    {% endif %}
 
-    </div>
+
+<div class="container">
+<table class="table">
+   <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Download Link</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for result in result.all %}
+    <tr>
+       <td>{{result.id}}</td>
+      <td>{{result.title}}</td>
+      <td><button type="button" class="btn btn-success" onclick="location.href='{{ result.file.url }}'">Download Here</button></td>
+
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 </div>
-{% endfor %}
-
 {% endblock %}

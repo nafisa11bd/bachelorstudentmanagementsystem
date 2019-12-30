@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>class tests</title>
+</head>
+<body>
+
+
+
+<div class="container">
+
+<table class="table table-bordered ">
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">Roll</th>
+      <th scope="col">Attended Classes</th>
+      <th scope="col">Percentage</th>
+     
+
+    </tr>
+  </thead>
+    <tbody>
+    {% for obj in d %}
+
+    <tr>
+
+      <td>{{obj.roll}}</td>
+      <td>{{obj.classes}}</td>
+      <td>{{obj.get_percentage}}</td>
+      
+
+    </tr>
+
+
+
+{% endfor %}
+    </table>
+ </tbody>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

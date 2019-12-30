@@ -60,7 +60,7 @@ ROOT_URLCONF = 'bachelorstudentmanagementsystem.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['bachelorstudentmanagementsystem/templates',os.path.join(BASE_DIR,'result','templates','result'),os.path.join(BASE_DIR,'semresult','templates','semresult')],
+        'DIRS': ['bachelorstudentmanagementsystem/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,6 +112,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
+
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend’
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'bachelorstudentregister@gmail.com'
+EMAIL_HOST_PASSWORD = 'bachelorstudent231'
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
@@ -132,7 +140,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'bachelorstudentmanagementsystem/static/')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
 

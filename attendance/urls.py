@@ -17,5 +17,8 @@ urlpatterns = [
     path('thrdcseB', views.thrdcseB, name='thrdcseB'),
     path('frthcseA', views.frthcseA, name='frthcseA'),
     path('frthcseB', views.frthcseB, name='frthcseB'),
-
+    path('CSE1101', views.CSE1101, name='CSE1101'),
+    path('CSE1101s', views.CSE1101s, name='CSE1101s'),
+    path('delete/<cse1101_roll>', views.deletecse1101, name='deletecse1101'),
+    path('edit/<int:cse1101_roll>', views.editcse1101, name='editcse1101'),
 ]

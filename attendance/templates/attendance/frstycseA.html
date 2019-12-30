@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+
+{% extends 'base2.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<style>
+    body{
+        padding-top:65px;
+    }
+</style>
+{% if user.is_staff == False %}
+<button onclick="location.href='{% url 'CSE1101s' %}'";type="button" class="btn btn-primary btn-lg btn-block">CSE 1101</button>
+{%else%}
+<button onclick="location.href='{% url 'CSE1101' %}'";type="button" class="btn btn-primary btn-lg btn-block">CSE 1101</button>
+{%endif%}
+
+{% endblock %}

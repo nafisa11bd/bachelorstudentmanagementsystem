@@ -47,6 +47,11 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       {% if user.is_authenticated %}
+        {% if user.is_staff == True%}
+             <li style="color: white;">Logged in as Teacher</li>
+        {%elif user.is_staff == False%}
+          <li style="color:white;">Logged in as Student</li>
+        {%endif%}
       <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}">Logout</a>
       <form id="logout" method="POST" action="{% url 'logout' %}">
       {% csrf_token %}
@@ -102,7 +107,7 @@
         <img src="{% static 'download.png' %}";width="250" height="200">
         <h2>Course Registration</h2>
         <p>Here Student can fill up their course registration form</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Enter</a></p>
+        <p><a class="btn btn-secondary" href="{% url 'reghome' %}" role="button">Enter</a></p>
       </div><!-- /.col-lg-4 -->
        <div class="col-lg-4">
         <img src="{% static 'CENTER_SIGN_SCHEDULE.jpg' %}";width="250" height="200">

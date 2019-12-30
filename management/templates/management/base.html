@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+{% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <title>Bachelor Student Management System</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Bachelor Student Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      {% if user.is_authenticated %}
+      <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}">Logout</a>
+      <form id="logout" method="POST" action="{% url 'logout' %}">
+      {% csrf_token %}
+      <input type="hidden"/>
+      </form>
+            {% else %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'signup' %}">Sign Up <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Log In</a>
+        {% endif %}
+      </li>
+
+
+    </ul>
+
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+
+  <div class="starter-template">
+    <br/>
+    <br/>
+
+  </div>
+  <div class="contain">
+    {% block content %}
+    {% endblock %}
+
+
+  </div>
+  <div class="functions">
+     {% if user.is_authenticated %}
+    </br>
+    </br>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'HID_educasestudy.jpg' %}";width="250" height="200">
+        <h2>Attendance</h2>
+        <p>Here teachers can take attendance of students and students can view their attendance marks</p>
+        <p><a class="btn btn-secondary" href="{% url 'index' %}" role="button">Enter</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'large-group-of-students-taking-test-id182059956-180302.jpg' %}";width="200" height="200">
+        <h2>Class Test Marks</h2>
+        <p>Here teachers can upload Class test mark and students can see them</p>
+        <p><a class="btn btn-secondary" href="{% url 'classtest' %}" role="button">Enter</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'download.png' %}";width="250" height="200">
+        <h2>Course Registration</h2>
+        <p>Here Student can fill up their course registration form</p>
+        <p><a class="btn btn-secondary" href="{% url 'reghome' %}" role="button">Enter</a></p>
+      </div><!-- /.col-lg-4 -->
+       <div class="col-lg-4">
+        <img src="{% static 'CENTER_SIGN_SCHEDULE.jpg' %}";width="250" height="200">
+        <h2>Class Schedule</h2>
+        <p>Information about class schedules of all semesters</p>
+        <p><a class="btn btn-secondary" href="{% url 'routines' %}" role="button">Enter</a></p>
+      </div><!-- /.col-lg-4 -->
+       <div class="col-lg-4">
+        <img src="{% static 'MAT-Result_6.jpeg' %}";width="250" height="200">
+        <h2>Semester Result</h2>
+        <p>Students can find their semester result here</p>
+        <p><a class="btn btn-secondary" href="{% url 'frontpage' %}" role="button">Enter</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    {% endif %}
+
+  </div>
+
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
