@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fb6ec32-d27c-488a-98f3-7b1b4a374343" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/attendance/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance/migrations/0002_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance/migrations/0003_auto_20191229_1417.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance/templates/attendance/CSE1101.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance/templates/attendance/CSE1101s.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance/templates/attendance/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/files/6a10acaf7c43532376e93f99b5cd7478_KMYDHU3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/files/Routine_19_8_19_.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/migrations/0010_auto_20191222_2029.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/migrations/0011_cse3103.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/teacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/CSE.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/CSE.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/frst_y_cse.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/frst_y_cse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/frstycseA.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/frstycseA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bachelorstudentmanagementsystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bachelorstudentmanagementsystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bachelorstudentmanagementsystem/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bachelorstudentmanagementsystem/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bachelorstudentmanagementsystem/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bachelorstudentmanagementsystem/templates/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bachelorstudentmanagementsystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bachelorstudentmanagementsystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/templates/result/cse3101.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/templates/result/cse3101.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/templates/result/cse3101s.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/templates/result/cse3101s.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/templates/result/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/templates/result/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semresult/templates/semresult/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/semresult/templates/semresult/frontpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/result/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bachelorstudentmanagementsystem/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
               <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -156,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/attendance/urls.py" />
         <option value="$PROJECT_DIR$/result/admin.py" />
         <option value="$PROJECT_DIR$/semresult/models.py" />
         <option value="$PROJECT_DIR$/semresult/admin.py" />
@@ -207,6 +172,7 @@
         <option value="$PROJECT_DIR$/result/templates/result/cse3101.html" />
         <option value="$PROJECT_DIR$/result/templates/result/cse3101s.html" />
         <option value="$PROJECT_DIR$/bachelorstudentmanagementsystem/settings.py" />
+        <option value="$PROJECT_DIR$/Procfile.txt" />
       </list>
     </option>
   </component>
@@ -231,11 +197,6 @@
             <path>
               <item name="bachelorstudentmanagementsystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="bachelorstudentmanagementsystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bachelorstudentmanagementsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bachelorstudentmanagementsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,8 +251,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,7 +264,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3282313" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3298791" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -628,6 +590,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
