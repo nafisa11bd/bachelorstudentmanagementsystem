@@ -1,9 +1,15 @@
 {% extends 'base2.html' %}
  {% load staticfiles %}
 {% block content %}
-</br>
-</br>
-</br>
+<style>
+    body{
+        padding-top:70px;
+    }
+</style>
 
+{% if user.is_staff == True %}
 <button type="button" class="btn btn-success" onclick="location.href='{% url 'cse3101' %}'">CSE 3101</button>
+{% elif user.is_staff == False %}
+<button type="button" class="btn btn-success" onclick="location.href='{% url 'cse3101s' %}'">CSE 3101</button>
+{% endif %}
 {% endblock %}

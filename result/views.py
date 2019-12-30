@@ -18,10 +18,21 @@ def cse3101(request):
         cse_3101=CSE3101.objects.all
         return render(request,'result/cse3101.html',{'cse_3101':cse_3101})
 
+def cse3101s(request):
+    if request.method=="POST":
+       form=formcse_3101(request.POST or None)
+       if form.is_valid():
+           form.save()
+       return redirect(cse3101s)
+
+    else:
+        cse_3101=CSE3101.objects.all
+        return render(request,'result/cse3101s.html',{'cse_3101':cse_3101})
+
 def deletecse3101(request,cse3101_roll):
     t_delete=CSE3101.objects.get(pk=cse3101_roll)
     t_delete.delete()
-    return redirect(cse3101)
+    return redirect(cse3101s)
 
 def editcse3101(request,cse3101_roll):
     if request.method =="POST":

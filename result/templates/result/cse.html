@@ -1,0 +1,18 @@
+
+{% extends 'base2.html' %}
+{% load staticfiles %}
+
+{% block content %}
+</br>
+</br>
+</br>
+<h1>Which one do you want?</h1>
+
+<button onclick="location.href='{% url 'firstyearcse' %}'";type="button" class="btn btn-primary btn-lg btn-block">First Year</button>
+<button onclick="location.href='{% url 'secondyearcse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Second Year</button>
+<button onclick="location.href='{% url 'thirdyearcse' %}'";type="button" class="btn btn-primary btn-lg btn-block">Third Year</button>
+<button onclick="location.href='{% url 'fourthyearcse' %}'"; type="button" class="btn btn-primary btn-lg btn-block">Fourth Year</button>
+
+
+{% endblock %}}
+

@@ -13,6 +13,14 @@ class CSE3101(models.Model):
     ct2mark = models.IntegerField(max_length=10, blank=True)
     ct3mark = models.IntegerField(max_length=10, blank=True)
     ct4mark = models.IntegerField(max_length=10, blank=True)
+    def bestavg(self):
+        a = self.ct1mark+self.ct2mark+self.ct3mark+self.ct4mark
+        b = min(self.ct1mark,self.ct2mark,self.ct3mark,self.ct4mark)
+        c = a - b
+        d = int(c/3)
+        if d<c/3:
+            d=d+1
+        return d
 
 class CSE3105(models.Model):
     roll = models.IntegerField(max_length=10)

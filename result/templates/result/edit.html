@@ -12,21 +12,28 @@
 
 <div class="container">
 </br>
-    <form method="POST" class="row">
+     <form method="POST">
         {% csrf_token %}
-      <label class="col-lg-4">CT 1 Mark</label>
-      <input type="number" class="form-control col-lg-6" name="ct1mark"  placeholder="{{cse3101obj.ct1mark}}" value="{{cse3101obj.ct1mark}}">
-        <button type="submit" class="btn btn-primary">Update Mark</button>
+  <div class="form-group">
+
+      <label>CT 1 Mark</label>
+      <input type="number" class="form-control" name="ct1mark"  placeholder="{{cse3101obj.ct1mark}}" value="{{cse3101obj.ct1mark}}">
+
+      <label>CT 2 Mark</label>
+      <input type="number" class="form-control" name="ct2mark"  placeholder="{{cse3101obj.ct2mark}}" value="{{cse3101obj.ct2mark}}">
+      <label>CT 3 Mark</label>
+      <input type="number" class="form-control" name="ct3mark"  placeholder="{{cse3101obj.ct3mark}}" value="{{cse3101obj.ct3mark}}">
+      <label>CT 4 Mark</label>
+      <input type="number" class="form-control" name="ct4mark"  placeholder="{{cse3101obj.ct4mark}}" value="{{cse3101obj.ct4mark}}">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </br>
-<form method="POST" class="row">
-        {% csrf_token %}
-      <label class="col-lg-4">CT 2 Mark</label>
-      <input type="number" class="form-control col-lg-6" name="ct2mark"  placeholder="{{cse3101obj.ct2mark}}" value="{{cse3101obj.ct2mark}}">
-        <button type="submit" class="btn btn-primary">Update Mark</button>
-</form>
 
-</div>
+adlaldad
+
 
 
 

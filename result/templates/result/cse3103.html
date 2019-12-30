@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<h1>CSE 3103</h1>
 
 <div class="container">
 </br>
@@ -40,14 +40,13 @@
       <th scope="col">CT2 Mark</th>
       <th scope="col">CT3 Mark</th>
       <th scope="col">CT4 Mark</th>
-      <th scope="col">Avg of best three</th>
       <th scope="col">Delete</th>
       <th scope="col">Update</th>
 
     </tr>
   </thead>
     <tbody>
-    {% for obj in cse_3101 %}
+    {% for obj in cse_3103 %}
 
     <tr>
 
@@ -56,9 +55,9 @@
       <td>{{obj.ct2mark}}</td>
       <td>{{obj.ct3mark}}</td>
       <td>{{obj.ct4mark}}</td>
-      <td>{{obj.bestavg}}</td>
-        <td><a href="{% url 'deletecse3101' obj.roll %}"> Delete</a></td>
-        <td><a href="{% url 'editcse3101' obj.roll %}"> Update</a></td>
+        <td><a href="{% url 'deletecse3103' obj.roll %}"> Delete</a></td>
+        <td><a href="{% url 'editcse3103' obj.roll %}"> Update</a></td>
+
     </tr>
 
 
@@ -67,7 +66,6 @@
     </table>
  </tbody>
 </div>
-
 
 
 
